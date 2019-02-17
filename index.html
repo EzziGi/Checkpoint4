@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Microsoft Word</title>
+        <link rel="icon" href="res/246x0w.jpg"> 
+        <link rel="stylesheet" href="css/style.css"
+    </head>
+    <body>
+        <div>
+           <center>
+              <button onclick="bold()" class="buttons" id="bold">Bold</button>
+              <button onclick="italic()" class="buttons" id="italic">Italic</button>
+              <button onclick="underlined()" class="buttons" id="underlined">Underlined</button>
+              <select onchange="changeFont(this);"  >
+                 <option value="Times New Roman" selected ="selected">Times New Roman</option>
+                 <option value="Arial">Arial</option>
+                 <option value="Courier New">Courier New</option>
+              </select>
+
+              <select onchange="changeSize(this)">
+                 <option value="10px">10</option>
+                 <option value="20px">20</option>
+                 <option value="30px">30</option>
+                 <option value="40px">40</option>
+              </select>
+           </center>
+        </div>
+        <br>
+        <br>
+        <center>
+            <textarea id="text" type="text" rows="170" cols="100"> </textarea>
+        </center>
+
+    </body>
+    <script src="js/main.js"> </script>
+</html>
